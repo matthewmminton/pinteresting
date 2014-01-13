@@ -1,6 +1,9 @@
-$body-bg:				#e67e22;
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+$body-bg:				#bdc3c7;
 $navbar-default-bg:			#ecf0f1;
-$btn-primary-bg:			#e67e22;
+$btn-primary-bg:			blue;
+$font-family-sans-serif: 			'Just Me Again Down Here', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
 @import 'bootstrap';
