@@ -1,4 +1,9 @@
 <div class="jumbotron center">
 <h1>Free Thoughts Here</h1>
-<p>Want to think, too? Click here to <%= link_to "sign up!", "#", class: "btn btn-primary btn-lg" %> or here to <%= link_to "log in!", "#", class: "btn btn-primary btn-lg" %></p>
+<% if user_signed_in? %>
+	You're already thinking! Way to go!
+<% else %>
+<p>Want to think, too? Click here to <%= link_to "sign up!", new_user_registration_path, class: "btn btn-primary btn-lg" %> or here to <%= link_to "log in!", new_user_session_path, class: "btn btn-primary btn-lg" %></p>
+<% end %>
+
 </div>
